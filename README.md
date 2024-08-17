@@ -18,11 +18,11 @@ Complete the order process.
 
 cypress/
 ├── e2e/
-│ ├── scenario_one.cy.js
+│   ├── scenario_one.cy.js
 ├── fixtures/
 ├── support/
-│ ├── commands.js
-│ ├── e2e.js
+│   ├── commands.js
+│   ├── e2e.js
 ├── cypress.json
 e2e/scenario_one.cy.js: Contains the test cases for the scenario described above.
 fixtures/: Contains any mock data files or JSON objects required for the tests.
