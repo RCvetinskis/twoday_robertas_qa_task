@@ -31,17 +31,6 @@ support/e2e.js: Global configurations and hooks. 5. In-Code Documentation
 Each test case in scenario_one.cy.js is well-commented to explain its purpose and the actions performed.
 
 ### Example:
-
-describe("Scenario One", () => {
-beforeEach(() => {
-// Intercept all XHR and fetch requests and suppress logs
-cy.intercept("\*", { log: false });
-});
-});
-
-it("Using navigation menu, find mens Hoodies & Sweatshirts section", () => {
-cy.visit("/");
-
     // hover navigation "men" nav item
     cy.get("#ui-id-5").trigger("mouseover");
     // when popover opens hover "tops"
