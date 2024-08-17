@@ -79,12 +79,6 @@ bash
 yarn cypress:open
 Select the spec file scenario_one.cy.js to run the tests.
 
-### Running in Headless Mode
-
-bash
-npx cypress run
-or
-
-bash
-yarn cypress:run
-This will execute all tests and provide a summary of results in the terminal.
+1. Select E2E testing
+2. Choose a browser
+3. Within  E2E specs  select scenario_one
