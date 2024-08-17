@@ -72,7 +72,7 @@ Each test case in scenario_one.cy.js is well-commented to explain its purpose an
 
 Using Cypress Test Runner
 bash
-npm run cypress:open
+npx cypress open
 or
 
 bash
@@ -82,7 +82,7 @@ Select the spec file scenario_one.cy.js to run the tests.
 ### Running in Headless Mode
 
 bash
-npm run cypress:run
+npx cypress run
 or
 
 bash
