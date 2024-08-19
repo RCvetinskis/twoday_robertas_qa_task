@@ -5,25 +5,40 @@ Cypress E2E Tests Documentation
 ### Overview
 
 This test suite automates the process of browsing and purchasing a product in an online store. The test suite covers the following flow:
-Navigate to the "Men's Hoodies & Sweatshirts" section.
-Verify that the number of displayed jackets matches the selected number per page.
-Select "Frankie Sweatshirt" and open its details.
-Select size, color, and quantity.
-Add the product to the cart and verify the cart icon is updated.
-Open the cart and verify the correct product is added.
-Proceed to checkout.
-Complete the order process.
+### ➢ Scenario one:
+▪ Using navigation menu, find mens Hoodies & Sweatshirts section. 
+▪ Check/Assert that the displayed number of jackets matches the selected 
+number of jackets displayed per page.
+▪ Select “Frankie Sweatshirt” and open its details.
+▪ Select size, colour and quantity.
+▪ Add product to cart and check that cart icon is updated with product quantity.
+▪ Open cart and check if product match the one You added to the cart.
+▪ Proceed to checkout
+▪ Complete the order.
+### ➢ Scenario two:
+▪ Using navigation menu, find women pants section.
+▪ Filter section to show the cheapest products available.
+▪ Select the cheapest pants and add them to the cart.
+▪ Add 2 more products to the cart. Check that cart icon is updated with each 
+product.
+▪ Remove product from the cart.
+▪ Proceed to checkout.
+▪ Add product to the cart from suggested products.
+▪ Complete the order.
 
 ### Structure
 
 cypress/
 ├── e2e/
 │   ├── scenario_one.cy.js
+│   ├── scenario_two.cy.js
 ├── fixtures/
 ├── support/
 │   ├── commands.js
 │   ├── e2e.js
 ├── cypress.json
+├── utils/
+│   ├── helpers.js
 e2e/scenario_one.cy.js: Contains the test cases for the scenario described above.
 fixtures/: Contains any mock data files or JSON objects required for the tests.
 support/commands.js: Custom commands for Cypress to extend its functionality.
@@ -77,8 +92,7 @@ or
 
 bash
 yarn cypress:open
-Select the spec file scenario_one.cy.js to run the tests.
 
 1. Select E2E testing
 2. Choose a browser
-3. Within  E2E specs  select scenario_one
+3. Within  E2E specs  select scenario_one or scenario_two
