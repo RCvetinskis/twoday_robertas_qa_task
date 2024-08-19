@@ -9,9 +9,8 @@ describe("Scenario One", () => {
     // hover navigation "men" nav item
     cy.get("#ui-id-5").trigger("mouseover");
     // when popover opens hover "tops"
-    cy.get(
-      "#ui-id-2 > li.level0.nav-3.category-item.level-top.parent.ui-menu-item > ul"
-    ).trigger("mouseover");
+    cy.get("#ui-id-17").trigger("mouseover");
+
     // navigate to hoodies and sweatshirts
     cy.get("#ui-id-20").click();
     // assert pathname
