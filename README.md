@@ -46,18 +46,14 @@ support/e2e.js: Global configurations and hooks. 5. In-Code Documentation
 Each test case in scenario_one.cy.js is well-commented to explain its purpose and the actions performed.
 
 ### Example:
-  it("Using navigation menu, find mens Hoodies & Sweatshirts section", () => {
     cy.visit("/");
     // hover navigation "men" nav item
     cy.get("#ui-id-5").trigger("mouseover");
     // when popover opens hover "tops"
     cy.get("#ui-id-17").trigger("mouseover");
-
-    // navigate to hoodies and sweatshirts
     cy.get("#ui-id-20").click();
     cy.assertLocation("/men/tops-men/hoodies-and-sweatshirts-men.html");
-  });
-
+    
 ### Prerequisites
 
 - Node.js (v14 or above)
