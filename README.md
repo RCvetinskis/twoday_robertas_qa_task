@@ -1,4 +1,4 @@
-# **twoday_robertas_qa_task
+# twoday_robertas_qa_task
 
 ## Cypress E2E Tests Documentation
 
