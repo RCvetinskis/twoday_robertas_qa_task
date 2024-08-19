@@ -46,21 +46,17 @@ support/e2e.js: Global configurations and hooks. 5. In-Code Documentation
 Each test case in scenario_one.cy.js is well-commented to explain its purpose and the actions performed.
 
 ### Example:
+  it("Using navigation menu, find mens Hoodies & Sweatshirts section", () => {
+    cy.visit("/");
     // hover navigation "men" nav item
     cy.get("#ui-id-5").trigger("mouseover");
     // when popover opens hover "tops"
-    cy.get(
-      "#ui-id-2 > li.level0.nav-3.category-item.level-top.parent.ui-menu-item > ul"
-    ).trigger("mouseover");
+    cy.get("#ui-id-17").trigger("mouseover");
+
     // navigate to hoodies and sweatshirts
     cy.get("#ui-id-20").click();
-    // assert pathname
-    cy.location("pathname").should(
-      "equal",
-      "/men/tops-men/hoodies-and-sweatshirts-men.html"
-    );
-
-});
+    cy.assertLocation("/men/tops-men/hoodies-and-sweatshirts-men.html");
+  });
 
 ### Prerequisites
 
