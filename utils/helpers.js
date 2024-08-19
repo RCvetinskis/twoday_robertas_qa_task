@@ -4,7 +4,6 @@ export function assertCounterNumber(numToBe) {
 export function addToCart(product) {
   cy.wrap(product)
     .find(".swatch-attribute.color .swatch-option")
-
     .first()
     .wait(500)
     .click({ force: true });
@@ -20,5 +19,6 @@ export function addToCart(product) {
     .trigger("mouseover")
     .find('button[title="Add to Cart"]')
     .should("be.visible")
+    .wait(1000)
     .click({ force: true });
 }
